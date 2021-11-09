@@ -45,6 +45,13 @@ Public Class SetLanguage
 	Public Sub SetText(ByRef control As String, ByVal node As String)
 		Try
 			control = Me.root.SelectSingleNode(Me.prefix & node).InnerText
+			' At launch time:
+			'  System.NullReferenceException
+			'  HResult = 0x80004003
+			'  Message = Object reference Not Set To an instance Of an Object.
+			'  Source = <Cannot evaluate the exception source>
+			'  StackTrace:
+			'  <Cannot evaluate the exception stack trace>
 		Catch
 			' The text remains unchanged if the translation is missing
 		End Try

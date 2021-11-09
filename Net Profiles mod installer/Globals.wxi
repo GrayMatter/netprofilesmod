@@ -24,4 +24,7 @@ along with Net Profiles mod.  If not, see <http://www.gnu.org/licenses/>.
 
 	<?define ProductName="Net Profiles mod"?>
 	<?define ProductVersion="0.2.5"?>
+  <?define MajorVersion="$(var.InstallerMajorVersion)" ?>
+  <?define MinorVersion="$(var.InstallerMinorVersion)" ?>
+  <?define BuildVersion="$(var.InstallerBuildVersion)" ?>  
 </Include>

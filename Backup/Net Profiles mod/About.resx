@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 48</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 25</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Net Profiles mod</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelVersion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 47</value>
+  </data>
+  <data name="labelVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 23</value>
+  </data>
+  <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelVersion.Text" xml:space="preserve">
+    <value>Version x.x.x</value>
+  </data>
+  <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelVersion.Name" xml:space="preserve">
+    <value>labelVersion</value>
+  </data>
+  <data name="&gt;&gt;labelVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelVersion.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelCopyright.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelCopyright.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelCopyright.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 70</value>
+  </data>
+  <data name="labelCopyright.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 23</value>
+  </data>
+  <data name="labelCopyright.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelCopyright.Text" xml:space="preserve">
+    <value>Copyright © 2004-2015 Urs Geissbühler, Hugo Anton Feldhammer, Daniel Milner</value>
+  </data>
+  <data name="labelCopyright.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelCopyright.Name" xml:space="preserve">
+    <value>labelCopyright</value>
+  </data>
+  <data name="&gt;&gt;labelCopyright.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCopyright.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelCopyright.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="buttonOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 130</value>
+  </data>
+  <data name="buttonOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="buttonOK.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Name" xml:space="preserve">
+    <value>buttonOK</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="linkLabelHomepage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="linkLabelHomepage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelHomepage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 93</value>
+  </data>
+  <data name="linkLabelHomepage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 23</value>
+  </data>
+  <data name="linkLabelHomepage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="linkLabelHomepage.Text" xml:space="preserve">
+    <value>https://github.com/netprofilesmod/netprofilesmod</value>
+  </data>
+  <data name="linkLabelHomepage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHomepage.Name" xml:space="preserve">
+    <value>linkLabelHomepage</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHomepage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHomepage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;linkLabelHomepage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>444, 169</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>450, 197</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>450, 197</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>About Net Profiles mod</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

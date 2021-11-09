@@ -51,11 +51,11 @@ along with Net Profiles mod.  If not, see <http://www.gnu.org/licenses/>.
 			</Condition>
 		<?endif?> 	
 
-		<!-- don't install if .NET Framework 2.0 is missing -->
+		<!-- don't install if .NET Framework 3.5 is missing -->
 
-		<PropertyRef Id="NETFRAMEWORK20"/>
+		<PropertyRef Id="NETFRAMEWORK35"/>
 		
-		<Condition Message="This application requires .NET Framework 2.0. Please install the .NET Framework, then run this installer again.">
+		<Condition Message="This application requires .NET Framework 3.5. Please install the .NET Framework, then run this installer again.">
     		<![CDATA[Installed OR NETFRAMEWORK20]]>
 		</Condition>
 		

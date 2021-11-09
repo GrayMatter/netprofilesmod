@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{03CDC339-A47B-4054-8D46-ECD8C162355D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <MyType>WindowsForms</MyType>
+    <RootNamespace>NetProfilesMod</RootNamespace>
+    <AssemblyName>Net Profiles mod</AssemblyName>
+    <ApplicationIcon>icons\netprofiles4.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RemoveIntegerChecks>False</RemoveIntegerChecks>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionInfer>Off</OptionInfer>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <TargetFrameworkProfile />
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\urx\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <StartupObject>NetProfilesMod.My.Program</StartupObject>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineConstants>DEBUG=1,TRACE=1</DefineConstants>
+    <Optimize>False</Optimize>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>PdbOnly</DebugType>
+    <DefineConstants>TRACE=1</DefineConstants>
+    <Optimize>True</Optimize>
+    <StartAction>Project</StartAction>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <ReferencePath>..\3rd Party\MessageBoxHook\bin\Win32\</ReferencePath>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <ReferencePath>..\3rd Party\MessageBoxHook\bin\x64\</ReferencePath>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\AnyCPU\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\AnyCPU\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessageBoxHook" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FirefoxSettings.vb" />
+    <Compile Include="ProfileWriter.vb" />
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivateSelectNetworkCard.Designer.vb">
+      <DependentUpon>ActivateSelectNetworkCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActivateSelectNetworkCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoActivate.Designer.vb">
+      <DependentUpon>AutoActivate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoActivate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenRes.vb" />
+    <Compile Include="CopyProfile.Designer.vb">
+      <DependentUpon>CopyProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CopyProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopShortcut.Designer.vb">
+      <DependentUpon>DesktopShortcut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopShortcut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encryption.vb" />
+    <Compile Include="Globals.vb" />
+    <Compile Include="MappedDrive.Designer.vb">
+      <DependentUpon>MappedDrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MappedDrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileSettings.Designer.vb">
+      <DependentUpon>ProfileSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunPrograms.Designer.vb">
+      <DependentUpon>RunPrograms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RunPrograms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetLanguage.vb" />
+    <Compile Include="WirelessDetected.Designer.vb">
+      <DependentUpon>WirelessDetected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WirelessDetected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActivateSelectNetworkCard.resx">
+      <DependentUpon>ActivateSelectNetworkCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoActivate.af.resx">
+      <DependentUpon>AutoActivate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoActivate.resx">
+      <DependentUpon>AutoActivate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyProfile.resx">
+      <DependentUpon>CopyProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopShortcut.resx">
+      <DependentUpon>DesktopShortcut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappedDrive.resx">
+      <DependentUpon>MappedDrive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileSettings.resx">
+      <DependentUpon>ProfileSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunPrograms.resx">
+      <DependentUpon>RunPrograms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WirelessDetected.resx">
+      <DependentUpon>WirelessDetected.vb</DependentUpon>
+    </EmbeddedResource>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <Icon Include="icons\netprofiles4.ico" />
+    <Lang Include="lang\ca-es.xml" />
+    <Lang Include="lang\cs-cz.xml" />
+    <Lang Include="lang\de-de.xml" />
+    <Lang Include="lang\en-us.xml" />
+    <Lang Include="lang\es-ar.xml" />
+    <Lang Include="lang\fr-fr.xml" />
+    <Lang Include="lang\hu-hu.xml" />
+    <Lang Include="lang\it-it.xml" />
+    <Lang Include="lang\nl-nl.xml" />
+    <Lang Include="lang\pl-pl.xml" />
+    <Lang Include="lang\pt-br.xml" />
+    <Lang Include="lang\ru-ru.xml" />
+    <Lang Include="lang\zh-cn.xml" />
+    <Lang Include="lang\zh-tw.xml" />
+    <Lang Include="lang\he-il.xml" />
+    <License Include="COPYING.txt" />
+    <MessageBoxManager Include="..\3rd Party\MessageBoxHook\bin\Common\License.txt" />
+    <MessageBoxManager Include="..\3rd Party\MessageBoxHook\bin\Common\Readme.txt" />
+    <Vc80Crt Include="..\3rd Party\Microsoft\VC80_CRT\bin\$(Platform)\Microsoft.VC80.CRT\Microsoft.VC80.CRT.manifest" />
+    <Vc80Crt Include="..\3rd Party\Microsoft\VC80_CRT\bin\$(Platform)\Microsoft.VC80.CRT\msvcm80.dll" />
+    <Vc80Crt Include="..\3rd Party\Microsoft\VC80_CRT\bin\$(Platform)\Microsoft.VC80.CRT\msvcp80.dll" />
+    <Vc80Crt Include="..\3rd Party\Microsoft\VC80_CRT\bin\$(Platform)\Microsoft.VC80.CRT\msvcr80.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lang" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppModule.Globals\AppModule.Globals.vbproj">
+      <Project>{3A175061-AC8A-4C84-AE75-9341D32DCD17}</Project>
+      <Name>AppModule.Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppModule.InterProcessComm\AppModule.InterProcessComm.csproj">
+      <Project>{E98F1F7E-40B6-44C8-AC66-EC867B141FA1}</Project>
+      <Name>AppModule.InterProcessComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AppModule.NamedPipes\AppModule.NamedPipes.csproj">
+      <Project>{077B53BB-404A-4B2F-BA17-AAE98C5E9C66}</Project>
+      <Name>AppModule.NamedPipes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagedWifi\ManagedWifi.csproj">
+      <Project>{6AA425C9-EA6A-4B01-AAED-5FF122E8B663}</Project>
+      <Name>ManagedWifi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <Target Name="CleanIcon">
+    <RemoveDir Directories="$(OutputPath)\icons" />
+  </Target>
+  <Target Name="DeployIcon">
+    <Copy SourceFiles="@(Icon)" DestinationFolder="$(OutputPath)\icons" />
+  </Target>
+  <Target Name="CleanLang">
+    <RemoveDir Directories="$(OutputPath)\lang" />
+  </Target>
+  <Target Name="DeployLang">
+    <Copy SourceFiles="@(Lang)" DestinationFolder="$(OutputPath)\lang" />
+  </Target>
+  <Target Name="CleanLicense">
+    <Delete Files="$(OutputPath)\COPYING.txt" />
+  </Target>
+  <Target Name="DeployLicense">
+    <Copy SourceFiles="@(License)" DestinationFolder="$(OutputPath)" />
+  </Target>
+  <Target Name="CleanMessageBoxManager">
+    <RemoveDir Directories="$(OutputPath)\MessageBoxManager" />
+  </Target>
+  <Target Name="DeployMessageBoxManager">
+    <Copy SourceFiles="@(MessageBoxManager)" DestinationFolder="$(OutputPath)\MessageBoxManager" />
+  </Target>
+  <Target Name="CleanVc80Crt">
+    <RemoveDir Directories="$(OutputPath)\Microsoft.VC80.CRT" />
+  </Target>
+  <Target Name="DeployVc80Crt">
+    <Copy SourceFiles="@(Vc80Crt)" DestinationFolder="$(OutputPath)\Microsoft.VC80.CRT" />
+  </Target>
+  <Target Name="BeforeBuild">
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="DeployIcon" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="DeployLang" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="DeployLicense" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="DeployMessageBoxManager" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="DeployVc80Crt" />
+  </Target>
+  <Target Name="BeforeClean">
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CleanIcon" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CleanLang" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CleanLicense" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CleanMessageBoxManager" />
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CleanVc80Crt" />
+  </Target>
+</Project>

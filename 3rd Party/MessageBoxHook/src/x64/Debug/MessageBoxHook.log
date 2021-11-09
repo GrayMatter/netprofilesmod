@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(39,5): warning MSB4211: The property "IntermediateOutputPath" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets(30,5): warning MSB4211: The property "DebugType" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets (29,5)".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(373,5): warning MSB4211: The property "CleanFile" is being set to a value for the first time, but it was already consumed at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (38,5)".
+  stdafx.cpp
+  MessageBoxHook.cpp
+\\Mac\Home\Documents\GitHub\netprofilesmod\3rd Party\MessageBoxHook\src\MessageBoxHook.cpp(340,69): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+\\Mac\Home\Documents\GitHub\netprofilesmod\3rd Party\MessageBoxHook\src\MessageBoxHook.cpp(344,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+MessageBoxHook.rc(10): fatal error RC1015: cannot open include file 'afxres.h'.
+  

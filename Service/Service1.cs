@@ -18,15 +18,15 @@ You should have received a copy of the GNU General Public License
 along with Net Profiles mod.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-using System;
-using System.Collections;
-using System.Threading;
+//using System;
+//using System.Collections;
 //using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
+//using System.Threading;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Diagnostics;
 using System.ServiceProcess;
-using System.Text;
+//using System.Text;
 
 using AppModule.InterProcessComm;
 using AppModule.NamedPipes;
